@@ -1,0 +1,52 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.vtiwari/weather-mcp",
+  "title": "Weather Alerts & Forecast",
+  "description": "US NWS alerts by state and short-term (next 5 periods) point forecasts.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/vtiwari/weather-mcp",
+    "source": "github"
+  },
+  "license": "MIT",
+  "keywords": ["weather", "forecast", "alerts", "nws", "mcp"],
+  "categories": ["data", "weather"],
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "weather",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "entrypoint": {
+        "type": "python",
+        "module": "weather.weather",
+        "function": "main"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_alerts",
+      "description": "Return active NWS weather alerts for a US state (two-letter code).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "state": {"type": "string", "description": "Two-letter US state code (e.g. CA, NY)"}
+        },
+        "required": ["state"]
+      }
+    },
+    {
+      "name": "get_forecast",
+      "description": "Return short-term (next ~5 periods) forecast for latitude/longitude via api.weather.gov.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "latitude": {"type": "number", "description": "Latitude of location"},
+          "longitude": {"type": "number", "description": "Longitude of location"}
+        },
+        "required": ["latitude", "longitude"]
+      }
+    }
+  ]
+}
