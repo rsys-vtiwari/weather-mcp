@@ -1,10 +1,22 @@
 [project]
-name = "weather"
+name = "weather-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server providing US NWS alerts and short-term forecasts"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "httpx>=0.28.1",
-    "mcp[cli]>=1.21.0",
+license = { text = "MIT" }
+authors = [ { name = "Vineet Kumar Tiwari" } ]
+keywords = ["weather","forecast","alerts","nws","mcp"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
 ]
+dependencies = [
+        "httpx>=0.28.1",
+        "mcp[cli]>=1.21.0",
+]
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"

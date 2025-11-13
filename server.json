@@ -14,7 +14,7 @@
   "packages": [
     {
       "registryType": "pypi",
-      "identifier": "weather",
+      "identifier": "weather-mcp",
       "version": "0.1.0",
       "transport": { "type": "stdio" },
       "entrypoint": {
