@@ -1,11 +1,11 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-  "name": "io.github.vtiwari/weather-mcp",
+  "name": "io.github.rsys-vtiwari/weather-mcp",
   "title": "Weather Alerts & Forecast",
   "description": "US NWS alerts by state and short-term (next 5 periods) point forecasts.",
   "version": "0.1.0",
   "repository": {
-    "url": "https://github.com/vtiwari/weather-mcp",
+    "url": "https://github.com/rsys-vtiwari/weather-mcp",
     "source": "github"
   },
   "license": "MIT",
