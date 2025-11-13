@@ -7,6 +7,10 @@ An MCP server that provides:
 
 Data is sourced from the public NWS API at https://api.weather.gov.
 
+<a href="https://glama.ai/mcp/servers/@rsys-vtiwari/weather-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@rsys-vtiwari/weather-mcp/badge" alt="Weather Server MCP server" />
+</a>
+
 ## Tools
 
 | Tool | Description | Inputs |
@@ -99,4 +103,3 @@ MIT (adjust if different).
 ## Disclaimer
 
 This server uses public NOAA/NWS endpoints. Respect API usage guidelines and rate limits.
-
